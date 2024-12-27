@@ -23,7 +23,7 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Poornima University (CSE) 2024-28</li>
+        <li>PU(CSE) 2024-28</li>
         <li>Ashoka Intrnational School (XII)</li>
         <li>Daisy Dales Senior Secondary School (X)</li>
       </ul>
