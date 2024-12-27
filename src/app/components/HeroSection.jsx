@@ -28,7 +28,7 @@ const HeroSection = () => {
                 1000,
                 "VC(Amazon AWS)",
                 1000,
-              ]}
+            ]}          
               wrapper="span"
               speed={50}
               repeat={Infinity}
@@ -80,3 +80,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
