@@ -36,6 +36,7 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Oracle Certified Generative AI Professional</li>
         <li>Oracle Certified Data Management Associate</li>
+        <li>Google GenAI Study Jams</li>
       </ul>
     ),
   },
