@@ -36,7 +36,6 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>Oracle Certified Generative AI Professional</li>
         <li>Oracle Certified Data Management Associate</li>
-        <li>Google GenAI Study Jams</li>
       </ul>
     ),
   },
@@ -55,7 +54,13 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/image.png" width={400} height={400} className="rounded-full"/>
+        <Image 
+          src="/images/mypic2.jpeg" 
+          width={400} 
+          height={400} 
+          className="rounded-full glow-blue" 
+          alt="Profile Picture" 
+        />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
@@ -71,22 +76,19 @@ const AboutSection = () => {
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "}
-              Skills{" "}
+              Skills
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "}
-              Education{" "}
+              Education
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "}
-              Certifications{" "}
+              Certifications
             </TabButton>
           </div>
           <div className="mt-8">
