@@ -16,17 +16,17 @@ const HeroSection = () => {
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-500">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-200 to-blue-300">
               Hello, I&apos;m{" "}
             </span>
-            <br></br>
+            <br />
             <TypeAnimation
               sequence={[
                 "Yug Pathak",
                 1000,
                 "Web Developer",
                 1000,
-                "Competitive Coder",
+                "Programmer",
                 1000,
               ]}
               wrapper="span"
@@ -35,7 +35,9 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-          My professional background includes extensive experience in Python, SQL, and advanced technologies like machine learning, deep learning, and generative AI.
+            My professional background includes extensive experience in Python,
+            SQL, and advanced technologies like machine learning, deep learning,
+            and generative AI.
           </p>
           <div>
             <Link
@@ -60,14 +62,16 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-4 place-self-center mt-4 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
-            <Image
-              src="/images/yug.jpg"
-              alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full shadow-[0px_0px_20px_5px_rgba(0,112,255,0.8)]"
-              width={300}
-              height={300}
+          <div className="rainbow-border w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] rounded-full flex items-center justify-center">
+            <div className="rounded-full bg-[#181818] w-[230px] h-[230px] lg:w-[380px] lg:h-[380px] relative image-container">
+              <Image
+                src="/images/yug.jpg"
+                alt="hero image"
+                className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full shadow-[0px_0px_20px_5px_rgba(0,112,255,0.8)] hover:shadow-[0_0_25px_15px_rgba(0,112,255,0.8)] transition-shadow duration-300"
+                width={300}
+                height={300}
               />
+            </div>
           </div>
         </motion.div>
       </div>
@@ -76,3 +80,4 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
+
